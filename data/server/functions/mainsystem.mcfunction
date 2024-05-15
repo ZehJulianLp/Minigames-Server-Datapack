@@ -51,5 +51,3 @@ execute as @a[nbt={Inventory:[{id:"minecraft:written_book"}]},scores={report-pro
 execute as @a[scores={report-prog=2}] run clear @s written_book
 execute as @a[scores={report-prog=2}] run tellraw @a[tag=admin] ["",{"text":"[Report] ","bold":true,"italic":true,"color":"dark_blue"},{"selector":"@s","color":"gold"},{"text":" hat einen Report abgegeben!","color":"dark_purple"}]
 execute as @a[scores={report-prog=2}] run scoreboard players reset @s report-prog
-
-

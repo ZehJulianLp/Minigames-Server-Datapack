@@ -72,6 +72,7 @@ execute as @a[scores={playtime-ticks=20..}] run scoreboard players add @s playti
 execute as @a[scores={playtime-ticks=20..}] run scoreboard players reset @s playtime-ticks
 execute as @a[scores={playtime-seconds=60..}] run scoreboard players add @s playtime-minutes 1
 execute as @a[scores={playtime-seconds=60..}] run scoreboard players set @s playtime-seconds 0
+execute as @a[scores={playtime-minutes=60..}] run function server:hourreward
 execute as @a[scores={playtime-minutes=60..}] run scoreboard players add @s playtime-hours 1
 execute as @a[scores={playtime-minutes=60..}] run scoreboard players set @s playtime-minutes 0
 execute as @a[scores={playtime-hours=24..}] run scoreboard players add @s playtime-days 1
