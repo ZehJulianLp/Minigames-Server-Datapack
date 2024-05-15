@@ -112,3 +112,19 @@ execute if score @s warpmenu matches 14 run item replace entity @e[type=chest_mi
 execute if score @s warpmenu matches 14 run function server:warpmenu/glass_set
 execute if score @s warpmenu matches 14 run scoreboard players set @s warpmenu 15
 execute if score @s warpmenu matches 15 run function server:warpmenu/shoppage
+
+execute if score @s warpmenu matches 16 run data merge entity @e[type=chest_minecart,distance=..3,limit=1] {Items:[]}
+execute if score @s warpmenu matches 16 run item replace entity @e[type=chest_minecart,distance=..3] container.4 with player_head{display:{Name:'{"text":"Sicher?","color":"red","bold":true,"italic":false}',Lore:['{"text":"Möchtest du wirklich den PREMIUM-RANG kaufen?","color":"white","italic":false}']},SkullOwner:{Id:[I;1699987509,1213481488,-2053774365,-34235879],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzU3NDcwMTBkODRhYTU2NDgzYjc1ZjYyNDNkOTRmMzRjNTM0NjAzNTg0YjJjYzY4YTQ1YmYzNjU4NDAxMDVmZCJ9fX0="}]}}} 1
+execute if score @s warpmenu matches 16 run item replace entity @e[type=chest_minecart,distance=..3] container.11 with lime_dye{display:{Name:'{"text":"JA","color":"green","italic":false}'}} 1
+execute if score @s warpmenu matches 16 run item replace entity @e[type=chest_minecart,distance=..3] container.15 with red_dye{display:{Name:'{"text":"NEIN","color":"red","italic":false}'}} 1
+execute if score @s warpmenu matches 16 run function server:warpmenu/glass_set
+execute if score @s warpmenu matches 16 run scoreboard players set @s warpmenu 17
+execute if score @s warpmenu matches 17 run function server:warpmenu/buyrankpage
+
+execute if score @s warpmenu matches 18 run data merge entity @e[type=chest_minecart,distance=..3,limit=1] {Items:[]}
+execute if score @s warpmenu matches 18 run item replace entity @e[type=chest_minecart,distance=..3] container.4 with player_head{display:{Name:'{"text":"Sicher?","color":"red","bold":true,"italic":false}',Lore:['{"text":"Möchtest du wirklich das PARTIKEL-PAKET kaufen?","color":"white","italic":false}']},SkullOwner:{Id:[I;1699987509,1213481488,-2053774365,-34235879],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzU3NDcwMTBkODRhYTU2NDgzYjc1ZjYyNDNkOTRmMzRjNTM0NjAzNTg0YjJjYzY4YTQ1YmYzNjU4NDAxMDVmZCJ9fX0="}]}}} 1
+execute if score @s warpmenu matches 18 run item replace entity @e[type=chest_minecart,distance=..3] container.11 with lime_dye{display:{Name:'{"text":"JA","color":"green","italic":false}'}} 1
+execute if score @s warpmenu matches 18 run item replace entity @e[type=chest_minecart,distance=..3] container.15 with red_dye{display:{Name:'{"text":"NEIN","color":"red","italic":false}'}} 1
+execute if score @s warpmenu matches 18 run function server:warpmenu/glass_set
+execute if score @s warpmenu matches 18 run scoreboard players set @s warpmenu 19
+execute if score @s warpmenu matches 19 run function server:warpmenu/buyparticlepage

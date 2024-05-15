@@ -9,3 +9,23 @@ clear @s tipped_arrow
 execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:18b,id:"minecraft:arrow"}]}] run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 1 1
 execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:18b,id:"minecraft:arrow"}]}] run scoreboard players set @s warpmenu 0
 execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:18b,id:"minecraft:arrow"}]}] run clear @s arrow
+
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:20b,id:"minecraft:gold_nugget"}]}] run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 1 1
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:20b,id:"minecraft:gold_nugget"}]}] if score @s coin-value matches 10000.. if entity @s[team=!BPremium] run scoreboard players set @s warpmenu 16
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:20b,id:"minecraft:gold_nugget"}]}] if score @s coin-value matches ..10000 run tellraw @s ["",{"text":"[Shop] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Du hast nicht genug Coins, um dies zu kaufen.","color":"red"}]
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:20b,id:"minecraft:gold_nugget"}]}] if score @s coin-value matches ..10000 run playsound minecraft:block.beacon.deactivate master @s ~ ~ ~ 1 1 1
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:20b,id:"minecraft:gold_nugget"}]}] if score @s coin-value matches ..10000 run scoreboard players set @s warpmenu 14
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:20b,id:"minecraft:gold_nugget"}]}] if entity @s[team=BPremium] run tellraw @s ["",{"text":"[Shop] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Du hast bereits den Premium-Rang.","color":"red"}]
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:20b,id:"minecraft:gold_nugget"}]}] if entity @s[team=BPremium] run playsound block.beacon.deactivate master @s ~ ~ ~ 1 1 1
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:20b,id:"minecraft:gold_nugget"}]}] if entity @s[team=BPremium] run scoreboard players set @s warpmenu 14
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:20b,id:"minecraft:gold_nugget"}]}] run clear @s gold_nugget
+
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:22b,id:"minecraft:gold_nugget"}]}] run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 1 1
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:22b,id:"minecraft:gold_nugget"}]}] if score @s coin-value matches 5000.. if entity @s[tag=!particles] run scoreboard players set @s warpmenu 18
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:22b,id:"minecraft:gold_nugget"}]}] if score @s coin-value matches ..5000 run tellraw @s ["",{"text":"[Shop] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Du hast nicht genug Coins, um dies zu kaufen.","color":"red"}]
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:22b,id:"minecraft:gold_nugget"}]}] if score @s coin-value matches ..5000 run playsound minecraft:block.beacon.deactivate master @s ~ ~ ~ 1 1 1
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:22b,id:"minecraft:gold_nugget"}]}] if score @s coin-value matches ..5000 run scoreboard players set @s warpmenu 14
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:22b,id:"minecraft:gold_nugget"}]}] if entity @s[tag=particles] run tellraw @s ["",{"text":"[Shop] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Du hast bereits das Partikel-Paket.","color":"red"}]
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:22b,id:"minecraft:gold_nugget"}]}] if entity @s[tag=particles] run playsound block.beacon.deactivate master @s ~ ~ ~ 1 1 1
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:22b,id:"minecraft:gold_nugget"}]}] if entity @s[tag=particles] run scoreboard players set @s warpmenu 14
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:22b,id:"minecraft:gold_nugget"}]}] run clear @s gold_nugget

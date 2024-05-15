@@ -47,10 +47,8 @@ execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:16b,
 execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:16b,id:"minecraft:slime_block"}]}] run scoreboard players set @s warpmenu 2
 
 execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:17b,id:"minecraft:gold_block"}]}] run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 1 1
-execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:17b,id:"minecraft:gold_block"}]}] run playsound minecraft:entity.enderman.teleport master @s ~ ~ ~ 100 2 1
-execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:17b,id:"minecraft:gold_block"}]}] run tp @s 2 51 10 -90 0
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:17b,id:"minecraft:gold_block"}]}] run scoreboard players set @s warpmenu 14
 execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:17b,id:"minecraft:gold_block"}]}] run clear @s gold_block
-execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:17b,id:"minecraft:gold_block"}]}] run scoreboard players set @s warpmenu 2
 
 execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:20b,id:"minecraft:barrel"}]}] run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 1 1
 execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:20b,id:"minecraft:barrel"}]}] run playsound minecraft:entity.enderman.teleport master @s ~ ~ ~ 100 2 1

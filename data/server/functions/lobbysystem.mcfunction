@@ -14,16 +14,16 @@ execute positioned -26 56 0 run effect give @a[distance=..20] minecraft:saturati
 execute positioned -26 56 0 run effect give @a[distance=..20] minecraft:resistance 2 255 true
 
 #warpmenu
-execute positioned -36 47 -17 as @a[gamemode=!creative,nbt=!{Inventory:[{id:"minecraft:compass"}]}] if entity @s[x=-36,y=30,z=-17,dx=57,dy=100,dz=37] run item replace entity @s hotbar.4 with compass{display:{Name:'{"text":"Teleporter","color":"gold","bold":true,"italic":false}'},HideFlags:1,lobbymenu:1b,Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s}]} 1
+execute positioned -36 47 -17 as @a[gamemode=!creative,nbt=!{Inventory:[{id:"minecraft:compass"}]}] if entity @s[x=-36,y=40,z=-17,dx=57,dy=100,dz=37] run item replace entity @s hotbar.4 with compass{display:{Name:'{"text":"Teleporter","color":"gold","bold":true,"italic":false}'},HideFlags:1,lobbymenu:1b,Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s}]} 1
 execute as @a[nbt={SelectedItem:{id:"minecraft:compass",Count:1b,tag:{lobbymenu:1b}}}] at @s unless entity @a[distance=1..7] run function server:warpmenu/main
 execute as @a[nbt={SelectedItem:{id:"minecraft:compass",Count:1b,tag:{lobbymenu:1b}}}] at @s if entity @a[distance=1..5] run title @s title ""
 execute as @a[nbt={SelectedItem:{id:"minecraft:compass",Count:1b,tag:{lobbymenu:1b}}}] at @s if entity @a[distance=1..5] run title @s subtitle "Bitte entferne dich von anderen Spielern."
 execute as @a[nbt={SelectedItem:{id:"minecraft:compass",Count:1b,tag:{lobbymenu:1b}}}] at @s if entity @a[distance=1..5] run tp @e[type=chest_minecart,distance=..2] ~ ~-1000 ~
 execute as @a[nbt={SelectedItem:{id:"minecraft:compass",Count:1b,tag:{lobbymenu:1b}}}] at @s if entity @a[distance=1..5] run scoreboard players reset @s warpmenu
-execute as @e[type=chest_minecart,tag=warpmenu] at @s unless entity @p[distance=..4] run kill @s
+execute as @e[type=chest_minecart,tag=warpmenu] at @s unless entity @p[distance=..6] run kill @s
 execute as @a[nbt=!{SelectedItem:{id:"minecraft:compass",Count:1b,tag:{lobbymenu:1b}}}] at @s run tp @e[type=chest_minecart,distance=..1.5,tag=warpmenu] ~ ~-1000 ~
 execute as @a[nbt=!{SelectedItem:{id:"minecraft:compass",Count:1b,tag:{lobbymenu:1b}}}] at @s run scoreboard players reset @s warpmenu
-execute positioned -36 47 -17 as @a unless entity @s[x=-36,y=30,z=-17,dx=57,dy=100,dz=37] run clear @s minecraft:compass
+execute positioned -36 47 -17 as @a unless entity @s[x=-36,y=40,z=-17,dx=57,dy=100,dz=37] run clear @s minecraft:compass
 kill @e[type=item,nbt={Item:{id:"minecraft:compass"}}]
 kill @e[type=item,x=-36,y=47,z=-17,dx=57,dy=100,dz=37]
 
@@ -39,7 +39,6 @@ execute as @a[team=] run team join Player @s
 #on join
 execute as @a[scores={leave=1..}] run trigger hub
 execute as @a[scores={leave=1..}] run clear @s minecraft:compass
-execute as @a[scores={leave=1..}] run scoreboard players set @s warpmenu 0
 execute as @a[scores={leave=1..}] run title @s times 20 60 20
 execute as @a[scores={leave=1..}] run title @s subtitle {"selector":"@s","underlined":true,"color":"gold"}
 execute as @a[scores={leave=1..}] run title @s title [{"text":"Willkommen zurück,","color":"dark_green","bold":true}]

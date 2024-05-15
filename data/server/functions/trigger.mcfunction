@@ -23,6 +23,8 @@ execute as @a[scores={start=1..},tag=sg] unless score players6 gameplayers match
 
 #trigger hub
 scoreboard players enable @a hub
+execute as @a[scores={hub=1..}] at @s run tellraw @s ["",{"text":"[Server] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Du wirst zurück zur Lobby teleportiert...","color":"dark_green"}]
+execute as @a[scores={hub=1..}] at @s run scoreboard players reset @s warpmenu
 execute as @a[scores={hub=1..}] at @s in minecraft:overworld run tp @s 15 32 -13
 execute as @a[scores={hub=1..}] at @s run gamemode adventure @s
 execute as @a[scores={hub=1..}] at @s run scoreboard players reset @s hub
