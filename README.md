@@ -1,29 +1,15 @@
 # Minigames Server Datapack
 
-Willkommen zum Minigames Server Datapack! Dieses Datapack ist speziell für meinen Server konzipiert und optimiert. Bitte beachten Sie, dass es nicht zum allgemeinen Download zur Verfügung steht.
+Willkommen zum Minigames Server Datapack! Dieses Datapack wurde speziell für meinen Server erstellt und ist nicht für andere Server geeignet. Es enthält eine Sammlung von Minispielen, die für unsere Community entwickelt wurden.
 
-## Features
+## Achtung!
 
-- Eine Vielzahl von Minispielen speziell für unseren Server
-- Individuell angepasste Spielmechaniken
-- Regelmäßige Updates und neue Inhalte
-
-## Installation
-
-**Hinweis:** Dieses Datapack ist ausschließlich für den internen Gebrauch auf unserem Server bestimmt. Es ist nicht für den öffentlichen Download oder die Installation auf anderen Servern vorgesehen.
-
-## Nutzung
-
-Um dieses Datapack auf unserem Server zu nutzen, folgen Sie bitte den Anweisungen auf der Server-Website. Bei Fragen oder Problemen können Sie sich ebenfalls dort melden.
+Dieses Datapack ist nur für den Gebrauch auf meinem Server gedacht. Bitte lade es nicht herunter oder versuche es auf deinem eigenen Server zu verwenden.
 
 ## Weitere Informationen
 
-Für mehr Informationen über unseren Minigames Server, besuchen Sie bitte unsere Website: [ZehjulianLP Minigames](https://sites.google.com/view/zehjulianlp-minigames/startseite).
+Für mehr Infos über den Server und die Minispiele besuche bitte die folgende Website: [Minigames Server](https://sites.google.com/view/zehjulianlp-minigames/startseite).
 
-Vielen Dank und viel Spaß beim Spielen!
+## Lizenz
 
-## Haftungsausschluss
-
-Dieses Datapack ist nur für die Verwendung auf dem angegebenen Server bestimmt. Bitte laden Sie es nicht herunter oder versuchen Sie es auf anderen Servern zu verwenden.
-
----
+Der Code dieses Datapacks ist frei und einsehbar. Es steht unter der MIT-Lizenz. Das bedeutet, du kannst den Code einsehen, nutzen und modifizieren, solange du die Lizenzbedingungen einhältst.
