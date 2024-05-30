@@ -36,6 +36,10 @@ execute as @a[team=] run scoreboard players reset @s warpmenu
 execute as @a[team=] run scoreboard players set @s coin-value 0
 execute as @a[team=] run team join Player @s
 
+#online player id system
+execute as @a unless score @s player-id matches 1.. run scoreboard players add .parse player-id 1
+execute as @a unless score @s player-id matches 1.. run scoreboard players operation @s player-id = .parse player-id
+
 #on join
 execute as @a[scores={leave=1..}] run trigger hub
 execute as @a[scores={leave=1..}] run clear @s minecraft:compass

@@ -30,4 +30,5 @@ scoreboard objectives add playtime-hours dummy
 scoreboard objectives add playtime-days dummy
 scoreboard objectives add report trigger
 scoreboard objectives add report-prog trigger
+scoreboard objectives add player-id dummy
 tellraw @a[tag=admin] "Reloaded Datapack."

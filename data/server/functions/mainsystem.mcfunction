@@ -21,7 +21,6 @@ execute as @a[scores={kill=1..},tag=ffa] run tellraw @s ["",{"text":"[FFA] ","bo
 execute as @a[scores={kill=1..},tag=ffa] at @s run playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 10 1
 execute as @a[scores={kill=1..},tag=ffa] at @s run scoreboard players add @s coin-value 10
 execute as @a[scores={kill=1..},tag=ffa] at @s run tellraw @s ["",{"text":"[CoinSystem] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Du hast ","color":"dark_green"},{"text":"10 ","bold":true,"color":"gold"},{"text":"Coins ","color":"green"},{"text":"erhalten.","color":"dark_green"}]
-execute as @a[scores={kill=1..},tag=ffa,tag=ffa_archer] at @s run give @s minecraft:arrow 8
 
 execute as @a[scores={death=1..},tag=bw] at @s run tag @s add killed
 execute as @a[scores={kill=1..},tag=bw] if entity @a[tag=bw,tag=killed] run tellraw @a[tag=bw] ["",{"text":"[BedWars] ","bold":true,"italic":true,"color":"dark_blue"},{"selector":"@a[tag=killed,tag=bw]","color":"dark_purple"},{"text":" wurde von ","color":"gold"},{"selector":"@s","color":"dark_purple"},{"text":" getötet!","color":"gold"}]
