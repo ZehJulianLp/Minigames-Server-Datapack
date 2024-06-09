@@ -30,5 +30,11 @@ scoreboard objectives add playtime-hours dummy
 scoreboard objectives add playtime-days dummy
 scoreboard objectives add report trigger
 scoreboard objectives add report-prog trigger
-scoreboard objectives add player-id dummy
+scoreboard objectives add party-invite trigger
+scoreboard objectives add party-accept trigger
+scoreboard objectives add party-leave trigger
+scoreboard objectives add party-kick trigger
+scoreboard objectives add party-promote trigger
+scoreboard objectives add party-demote trigger
+scoreboard objectives add party-warp trigger
 tellraw @a[tag=admin] "Reloaded Datapack."

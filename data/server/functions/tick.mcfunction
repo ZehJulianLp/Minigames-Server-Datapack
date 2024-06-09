@@ -19,3 +19,6 @@ function server:sw
 
 #partygames functions
 function server:boat
+
+#friends functions
+function server:partysystem

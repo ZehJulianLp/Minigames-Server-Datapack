@@ -1,7 +1,7 @@
 #start cmd
-scoreboard players enable @a[team=!Player,tag=!sg,tag=!1v1,tag=!sw] start
-execute as @a[scores={start=1..},tag=!sg,tag=!sw,tag=!1v1] run tellraw @s ["",{"text":"[Start] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Du musst einem Spiel ","color":"red"},{"text":"joinen,","color":"gold"},{"text":" um den Befehl nutzen zu können! Unterstützte Spiele sind: \n\nSkyWars, SurvivalGames, Kit1vs1.\n","color":"red"}]
-execute as @a[scores={start=1..},tag=!sg,tag=!sw,tag=!1v1] run scoreboard players reset @s start
+scoreboard players enable @a[team=!Player,tag=!sg,tag=!1v1,tag=!sw,tag=!hide_and_seek] start
+execute as @a[scores={start=1..},tag=!sg,tag=!sw,tag=!1v1,tag=!hide_and_seek] run tellraw @s ["",{"text":"[Start] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Du musst einem Spiel ","color":"red"},{"text":"joinen,","color":"gold"},{"text":" um den Befehl nutzen zu können! Unterstützte Spiele sind: \n\nSkyWars, SurvivalGames, Kit1vs1, Hide & Seek.\n","color":"red"}]
+execute as @a[scores={start=1..},tag=!sg,tag=!sw,tag=!1v1,tag=!hide_and_seek] run scoreboard players reset @s start
 execute as @a[scores={start=1..},tag=sw] if score players2 gameplayers matches 2.. run scoreboard players set sw counter 9
 execute as @a[scores={start=1..},tag=sw] if score players2 gameplayers matches 2.. run tellraw @s ["",{"text":"[Start] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Du hast das Spiel ","color":"yellow"},{"text":"schnellgestartet.","color":"gold"},{"text":"","color":"red"}]
 execute as @a[scores={start=1..},tag=sw] if score players2 gameplayers matches 2.. run scoreboard players reset @a[tag=sw] start
@@ -11,6 +11,9 @@ execute as @a[scores={start=1..},tag=1v1] if score players1 gameplayers matches 
 execute as @a[scores={start=1..},tag=sg] if score players6 gameplayers matches 2.. run scoreboard players set sg counter 20
 execute as @a[scores={start=1..},tag=sg] if score players6 gameplayers matches 2.. run tellraw @s ["",{"text":"[Start] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Du hast das Spiel ","color":"yellow"},{"text":"schnellgestartet.","color":"gold"},{"text":"","color":"red"}]
 execute as @a[scores={start=1..},tag=sg] if score players6 gameplayers matches 2.. run scoreboard players reset @a[tag=sg] start
+execute as @a[scores={start=1..},tag=hide_and_seek] if score players8 gameplayers matches 2.. run scoreboard players set hide_seek counter 50
+execute as @a[scores={start=1..},tag=hide_and_seek] if score players8 gameplayers matches 2.. run tellraw @s ["",{"text":"[Start] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Du hast das Spiel ","color":"yellow"},{"text":"schnellgestartet.","color":"gold"},{"text":"","color":"red"}]
+execute as @a[scores={start=1..},tag=hide_and_seek] if score players8 gameplayers matches 2.. run scoreboard players reset @a[tag=hide_and_seek] start
 execute as @a[scores={start=1..},tag=sw] unless score players2 gameplayers matches 2.. run tellraw @s ["",{"text":"[Start] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Es müssen mindestens ","color":"red"},{"text":"zwei Spieler","color":"gold"},{"text":" vorhanden sein, um zu starten.","color":"red"}]
 execute as @a[scores={start=1..},tag=sw] unless score players2 gameplayers matches 2.. run scoreboard players enable @s start
 execute as @a[scores={start=1..},tag=sw] unless score players2 gameplayers matches 2.. run scoreboard players set @s start 0
@@ -20,6 +23,9 @@ execute as @a[scores={start=1..},tag=1v1] unless score players1 gameplayers matc
 execute as @a[scores={start=1..},tag=sg] unless score players6 gameplayers matches 2.. run tellraw @s ["",{"text":"[Start] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Es müssen mindestens ","color":"red"},{"text":"zwei Spieler","color":"gold"},{"text":" vorhanden sein, um zu starten.","color":"red"}]
 execute as @a[scores={start=1..},tag=sg] unless score players6 gameplayers matches 2.. run scoreboard players enable @s start
 execute as @a[scores={start=1..},tag=sg] unless score players6 gameplayers matches 2.. run scoreboard players set @s start 0
+execute as @a[scores={start=1..},tag=hide_and_seek] unless score players8 gameplayers matches 2.. run tellraw @s ["",{"text":"[Start] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Es müssen mindestens ","color":"red"},{"text":"zwei Spieler","color":"gold"},{"text":" vorhanden sein, um zu starten.","color":"red"}]
+execute as @a[scores={start=1..},tag=hide_and_seek] unless score players8 gameplayers matches 2.. run scoreboard players enable @s start
+execute as @a[scores={start=1..},tag=hide_and_seek] unless score players8 gameplayers matches 2.. run scoreboard players set @s start 0
 
 #trigger hub
 scoreboard players enable @a hub
@@ -55,7 +61,7 @@ execute positioned 0 52 0 as @a[scores={tp=1..},distance=5..] run trigger hub
 
 #joinme trigger
 scoreboard players enable @a[team=!Player] joinme
-execute as @a[scores={joinme=1..},tag=!sw,tag=!ffa,tag=!1v1,tag=!mlgrush,tag=!tntwar,tag=!sg,tag=!party,tag=!bw] run tellraw @s ["",{"text":"[JoinMe] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Du bist in keinen Spiel! Du musst einem Spiel beitreten, um ein ","color":"red"},{"text":"JoinMe","color":"yellow"},{"text":" zu erstellen!","color":"red"}]
+execute as @a[scores={joinme=1..},tag=!sw,tag=!ffa,tag=!1v1,tag=!mlgrush,tag=!tntwar,tag=!sg,tag=!party,tag=!bw,tag=!hide_and_seek] run tellraw @s ["",{"text":"[JoinMe] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Du bist in keinen Spiel! Du musst einem Spiel beitreten, um ein ","color":"red"},{"text":"JoinMe","color":"yellow"},{"text":" zu erstellen!","color":"red"}]
 execute as @a[scores={joinme=1..},tag=sw] run tellraw @a ["",{"text":"[JoinMe]","bold":true,"italic":true,"color":"dark_blue"},{"text":" ","bold":true,"italic":true,"color":"blue"},{"selector":"@s","color":"aqua"},{"text":" spielt ","color":"green"},{"text":"SkyWars. ","color":"red"},{"text":"Drücke ","color":"green"},{"text":"[HIER]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger tp set 1"}},{"text":" um mitzuspielen.","color":"green"}]
 execute as @a[scores={joinme=1..},tag=ffa] run tellraw @a ["",{"text":"[JoinMe]","bold":true,"italic":true,"color":"dark_blue"},{"text":" ","bold":true,"italic":true,"color":"blue"},{"selector":"@s","color":"aqua"},{"text":" spielt ","color":"green"},{"text":"KitFFA. ","color":"red"},{"text":"Drücke ","color":"green"},{"text":"[HIER]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger tp set 2"}},{"text":" um mitzuspielen.","color":"green"}]
 execute as @a[scores={joinme=1..},tag=1v1] run tellraw @a ["",{"text":"[JoinMe]","bold":true,"italic":true,"color":"dark_blue"},{"text":" ","bold":true,"italic":true,"color":"blue"},{"selector":"@s","color":"aqua"},{"text":" spielt ","color":"green"},{"text":"Kit1vs1. ","color":"red"},{"text":"Drücke ","color":"green"},{"text":"[HIER]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger tp set 3"}},{"text":" um mitzuspielen.","color":"green"}]
@@ -64,6 +70,7 @@ execute as @a[scores={joinme=1..},tag=tntwar] run tellraw @a ["",{"text":"[JoinM
 execute as @a[scores={joinme=1..},tag=sg] run tellraw @a ["",{"text":"[JoinMe]","bold":true,"italic":true,"color":"dark_blue"},{"text":" ","bold":true,"italic":true,"color":"blue"},{"selector":"@s","color":"aqua"},{"text":" spielt ","color":"green"},{"text":"SurvivalGames. ","color":"red"},{"text":"Drücke ","color":"green"},{"text":"[HIER]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger tp set 6"}},{"text":" um mitzuspielen.","color":"green"}]
 execute as @a[scores={joinme=1..},tag=party] run tellraw @a ["",{"text":"[JoinMe]","bold":true,"italic":true,"color":"dark_blue"},{"text":" ","bold":true,"italic":true,"color":"blue"},{"selector":"@s","color":"aqua"},{"text":" spielt ","color":"green"},{"text":"PartyGames. ","color":"red"},{"text":"Drücke ","color":"green"},{"text":"[HIER]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger tp set 7"}},{"text":" um mitzuspielen.","color":"green"}]
 execute as @a[scores={joinme=1..},tag=bw] run tellraw @a ["",{"text":"[JoinMe]","bold":true,"italic":true,"color":"dark_blue"},{"text":" ","bold":true,"italic":true,"color":"blue"},{"selector":"@s","color":"aqua"},{"text":" spielt ","color":"green"},{"text":"BedWars. ","color":"red"},{"text":"Drücke ","color":"green"},{"text":"[HIER]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger tp set 10"}},{"text":" um mitzuspielen.","color":"green"}]
+execute as @a[scores={joinme=1..},tag=hide_and_seek] run tellraw @a ["",{"text":"[JoinMe]","bold":true,"italic":true,"color":"dark_blue"},{"text":" ","bold":true,"italic":true,"color":"blue"},{"selector":"@s","color":"aqua"},{"text":" spielt ","color":"green"},{"text":"Hide & Seek. ","color":"red"},{"text":"Drücke ","color":"green"},{"text":"[HIER]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger tp set 12"}},{"text":" um mitzuspielen.","color":"green"}]
 execute as @a[scores={joinme=1..}] run scoreboard players set @s joinme 0
 
 #playtime calculation
