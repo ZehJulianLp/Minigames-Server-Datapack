@@ -18,6 +18,7 @@ execute if score @s glass_color matches 13 run data modify storage minecraft:tmp
 execute if score @s glass_color matches 14 run data modify storage minecraft:tmp Fill.id set value "minecraft:purple_stained_glass_pane"
 execute if score @s glass_color matches 15 run data modify storage minecraft:tmp Fill.id set value "minecraft:magenta_stained_glass_pane"
 execute if score @s glass_color matches 16 run data modify storage minecraft:tmp Fill.id set value "minecraft:pink_stained_glass_pane"
+execute if score @s glass_color matches 17 run data modify storage minecraft:tmp Fill.id set value "minecraft:air"
 # Initialize @s with falsy value
 scoreboard players set @s Slot -1
 

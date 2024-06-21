@@ -61,6 +61,7 @@ execute if score @s profilmenu matches 6 run item replace entity @e[type=chest_m
 execute if score @s profilmenu matches 6 run item replace entity @e[type=chest_minecart,distance=..3] container.23 with purple_stained_glass_pane{display:{Name:'{"text":"Lila","color":"dark_purple","italic":false}'}} 1
 execute if score @s profilmenu matches 6 run item replace entity @e[type=chest_minecart,distance=..3] container.24 with magenta_stained_glass_pane{display:{Name:'{"text":"Magenta","color":"light_purple","italic":false}'}} 1
 execute if score @s profilmenu matches 6 run item replace entity @e[type=chest_minecart,distance=..3] container.25 with pink_stained_glass_pane{display:{Name:'{"text":"Pink","color":"#FF0099","italic":false}'}} 1
+execute if score @s profilmenu matches 6 run item replace entity @e[type=chest_minecart,distance=..3] container.26 with barrier{display:{Name:'{"text":"Kein Glas","color":"dark_gray","italic":false}'}} 1
 execute if score @s profilmenu matches 6 run scoreboard players set @s profilmenu 7
 execute if score @s profilmenu matches 7 run function server:profilmenu/colorpage
 

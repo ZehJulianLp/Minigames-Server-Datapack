@@ -86,3 +86,9 @@ execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:25b,
 execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:25b,id:"minecraft:pink_stained_glass_pane"}]}] run tellraw @s ["",{"text":"[Settings] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Menüfarbe geändert zu:","color":"gold"},{"text":" rosa Glas","color":"#FF0099"}]
 execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:25b,id:"minecraft:pink_stained_glass_pane"}]}] run scoreboard players set @s glass_color 16
 execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:25b,id:"minecraft:pink_stained_glass_pane"}]}] run scoreboard players set @s profilmenu 4
+
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:26b,id:"minecraft:barrier"}]}] run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 1 1
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:26b,id:"minecraft:barrier"}]}] run tellraw @s ["",{"text":"[Settings] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Menüfarbe geändert zu:","color":"gold"},{"text":" keinem Glas","color":"white"}]
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:26b,id:"minecraft:barrier"}]}] run scoreboard players set @s glass_color 17
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:26b,id:"minecraft:barrier"}]}] run clear @s barrier
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:26b,id:"minecraft:barrier"}]}] run scoreboard players set @s profilmenu 4

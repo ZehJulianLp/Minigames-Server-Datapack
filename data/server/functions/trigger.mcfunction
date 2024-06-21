@@ -97,3 +97,15 @@ execute as @a[scores={report=1..}] run give @s minecraft:writable_book{pages:['S
 execute as @a[scores={report=1..}] run tellraw @s ["",{"text":"[Report] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Bitte schreibe den Spielername und den Grund in das Buch auf die jeweilige Seite. Signiere das Buch dann.","color":"red"}]
 execute as @a[scores={report=1..}] run scoreboard players set @s report-prog 1
 execute as @a[scores={report=1..}] run scoreboard players reset @s report
+
+#stats trigger
+scoreboard players enable @a stats
+execute as @a[scores={stats=1..}] run tellraw @s ["",{"text":"[Stats] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Deine Statistiken: ","color":"green"},{"text":"\n","color":"gold"}]
+execute as @a[scores={stats=1..},team=Player] run tellraw @s ["",{"text":"Rang: ","color":"green"},{"text":"Spieler","color":"green"}]
+execute as @a[scores={stats=1..},team=BPremium] run tellraw @s ["",{"text":"Rang: ","color":"green"},{"text":"Premium","color":"aqua"}]
+execute as @a[scores={stats=1..},team=Admin] run tellraw @s ["",{"text":"Rang: ","color":"green"},{"text":"Admin","color":"red"}]
+execute as @a[scores={stats=1..}] run tellraw @s ["",{"text":"Coins: ","color":"green"},{"score":{"name":"@s","objective":"coin-value"},"color":"gold"},{"text":"","color":"green"}]
+execute as @a[scores={stats=1..}] run tellraw @s ["",{"text":"Spielzeit: ","color":"green"},{"score":{"name":"@s","objective":"playtime-days"},"color":"gold","bold":true},{"text":"d ","color":"green"},{"score":{"name":"@s","objective":"playtime-hours"},"color":"gold","bold":true},{"text":"h ","color":"green"},{"score":{"name":"@s","objective":"playtime-minutes"},"color":"gold","bold":true},{"text":"m ","color":"green"},{"score":{"name":"@s","objective":"playtime-seconds"},"color":"gold","bold":true},{"text":"s ","color":"green"}]
+execute as @a[scores={stats=1..}] run tellraw @s ["",{"text":"Kills: ","color":"green"},{"score":{"name":"@s","objective":"killCount"},"color":"gold"},{"text":"","color":"green"}]
+execute as @a[scores={stats=1..}] run tellraw @s ["",{"text":"Tode: ","color":"green"},{"score":{"name":"@s","objective":"deathCount"},"color":"gold"},{"text":"","color":"green"}]
+execute as @a[scores={stats=1..}] run scoreboard players reset @s stats
