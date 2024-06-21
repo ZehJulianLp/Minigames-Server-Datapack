@@ -55,17 +55,9 @@ execute as @a[team=] run team join Player @s
 execute as @a unless score @s player-id matches 1.. run scoreboard players add .parse player-id 1
 execute as @a unless score @s player-id matches 1.. run scoreboard players operation @s player-id = .parse player-id
 
-#on join
-execute as @a[scores={leave=1..}] run trigger hub
-execute as @a[scores={leave=1..}] run clear @s minecraft:compass
-execute as @a[scores={leave=1..}] run title @s times 20 60 20
-execute as @a[scores={leave=1..}] run title @s subtitle {"selector":"@s","underlined":true,"color":"gold"}
-execute as @a[scores={leave=1..}] run title @s title [{"text":"Willkommen zurück,","color":"dark_green","bold":true}]
-execute as @a[scores={leave=1..}] run scoreboard players reset @s warpmenu
-execute as @a[scores={leave=1..}] run scoreboard players reset @s leave
 
 #lobby Teleporter
-execute positioned 15 33 -13 run title @a[distance=..5] times 20 60 20
+execute positioned 15 33 -13 run title @a[distance=..5] times 10 60 10
 execute positioned 15 33 -13 run tag @a[distance=..5] remove bw
 execute positioned 15 33 -13 run tag @a[distance=..5] remove bw_red
 execute positioned 15 33 -13 run tag @a[distance=..5] remove bw_blue
@@ -115,7 +107,17 @@ execute positioned 15 33 -13 run tag @a[distance=..10] remove 1v1_box
 execute positioned 15 33 -13 run tag @a[distance=..10] remove hide_and_seek
 execute positioned 15 33 -13 run tag @a[distance=..10] remove hider
 execute positioned 15 33 -13 run tag @a[distance=..10] remove seeker
+execute positioned 15 33 -13 run title @a[distance=..5] title {"text": "Lobby", "color": "white"}
 
+#on join
+execute as @a[scores={leave=1..}] run trigger hub
+execute as @a[scores={leave=1..}] run clear @s minecraft:compass
+execute as @a[scores={leave=1..}] run title @s times 20 60 20
+execute as @a[scores={leave=1..}] run title @s subtitle {"selector":"@s","underlined":true,"color":"gold"}
+execute as @a[scores={leave=1..}] run title @s title [{"text":"Willkommen zurück,","color":"dark_green","bold":true}]
+execute as @a[scores={leave=1..}] run tellraw @s ["",{"text":"Willkommen zurück,","color":"dark_green","bold":true},{"text":" ","color":"dark_green","bold":true},{"selector":"@s","color":"gold","bold":true},{"text":"!","color":"dark_green","bold":true}]
+execute as @a[scores={leave=1..}] run scoreboard players reset @s warpmenu
+execute as @a[scores={leave=1..}] run scoreboard players reset @s leave
 
 ##
 
