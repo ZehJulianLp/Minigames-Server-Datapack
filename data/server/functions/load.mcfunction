@@ -1,7 +1,9 @@
 scoreboard objectives add counter dummy
 scoreboard objectives add boatround dummy
 scoreboard objectives add kill playerKillCount
+scoreboard objectives add killCount playerKillCount
 scoreboard objectives add death deathCount
+scoreboard objectives add deathCount deathCount
 scoreboard objectives add hub trigger
 scoreboard objectives add gameplayers dummy
 scoreboard objectives add vill-click minecraft.custom:talked_to_villager

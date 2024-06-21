@@ -1,0 +1,38 @@
+[
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "name": {
+        "text": "Deine Kills:",
+        "color": "gold",
+        "font": "minecraft:default",
+        "bold": true,
+        "italic": false
+      }
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        {
+          "score": {
+            "name": "@p[distance=..3]",
+            "objective": "killCount"
+          },
+          "color": "yellow",
+          "bold": false,
+          "italic": false
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "(Klicke zum Updaten.)",
+          "color": "yellow",
+          "bold": false,
+          "italic": false
+        }
+      ]
+    }
+  ]
+  

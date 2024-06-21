@@ -16,6 +16,16 @@ execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:15b,
 execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:15b,id:"minecraft:clock"}]}] run scoreboard players set @s profilmenu 2
 execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:15b,id:"minecraft:clock"}]}] run clear @s clock
 
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:12b,id:"minecraft:iron_sword"}]}] run playsound minecraft:block.amethyst_block.place master @s ~ ~ ~ 1 1 1
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:12b,id:"minecraft:iron_sword"}]}] run tellraw @s ["",{"text":"[Server] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Seite aktualisiert!","color":"gold"}]
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:12b,id:"minecraft:iron_sword"}]}] run scoreboard players set @s profilmenu 2
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:12b,id:"minecraft:iron_sword"}]}] run clear @s iron_sword
+
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:13b,id:"minecraft:skeleton_skull"}]}] run playsound minecraft:block.amethyst_block.place master @s ~ ~ ~ 1 1 1
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:13b,id:"minecraft:skeleton_skull"}]}] run tellraw @s ["",{"text":"[Server] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Seite aktualisiert!","color":"gold"}]
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:13b,id:"minecraft:skeleton_skull"}]}] run scoreboard players set @s profilmenu 2
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:13b,id:"minecraft:skeleton_skull"}]}] run clear @s skeleton_skull
+
 execute as @s[team=Admin] run item replace entity @e[type=chest_minecart,distance=..3] container.11 with redstone_block{display:{Name:'{"text":"Dein Rang:","color":"gold","bold":true, "italic": false}',Lore:['{"text":"Admin","color":"red","italic": false}']}}
 execute as @s[team=BPremium] run item replace entity @e[type=chest_minecart,distance=..3] container.11 with diamond{display:{Name:'{"text":"Dein Rang:","color":"gold","bold":true, "italic": false}',Lore:['{"text":"Premium","color":"aqua","italic": false}']}}
 execute as @s[team=Player] run item replace entity @e[type=chest_minecart,distance=..3] container.11 with iron_ingot{display:{Name:'{"text":"Dein Rang:","color":"gold","bold":true, "italic": false}',Lore:['{"text":"Spieler","color":"green","italic": false}']}}

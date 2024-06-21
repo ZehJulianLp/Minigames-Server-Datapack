@@ -49,6 +49,8 @@ execute as @a[team=] run function server:reset_playtime
 execute as @a[team=] run tellraw @s ["",{"text":"Willkommen auf den","color":"green"},{"text":" Minigames-Server von","color":"red"},{"text":" ZehJulian_lp!","bold":true,"color":"gold"},{"text":"\n "}]
 execute as @a[team=] run scoreboard players reset @s warpmenu
 execute as @a[team=] run scoreboard players set @s coin-value 0
+execute as @a[team=] run scoreboard players set @s killCount 0
+execute as @a[team=] run scoreboard players set @s deathCount 0
 execute as @a[team=] run team join Player @s
 
 #online player id system
@@ -117,6 +119,7 @@ execute as @a[scores={leave=1..}] run title @s subtitle {"selector":"@s","underl
 execute as @a[scores={leave=1..}] run title @s title [{"text":"Willkommen zurück,","color":"dark_green","bold":true}]
 execute as @a[scores={leave=1..}] run tellraw @s ["",{"text":"Willkommen zurück,","color":"dark_green","bold":true},{"text":" ","color":"dark_green","bold":true},{"selector":"@s","color":"gold","bold":true},{"text":"!","color":"dark_green","bold":true}]
 execute as @a[scores={leave=1..}] run scoreboard players reset @s warpmenu
+execute as @a[scores={leave=1..}] run scoreboard players reset @s profilmenu
 execute as @a[scores={leave=1..}] run scoreboard players reset @s leave
 
 ##

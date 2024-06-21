@@ -21,8 +21,12 @@ execute if score @s profilmenu matches 2 run data merge entity @e[type=chest_min
 execute if score @s profilmenu matches 2 run item replace entity @e[type=chest_minecart,distance=..3] container.14 with gold_nugget
 execute if score @s profilmenu matches 2 run item replace entity @e[type=chest_minecart,distance=..3] container.15 with clock
 execute if score @s profilmenu matches 2 run item replace entity @e[type=chest_minecart,distance=..3] container.18 with arrow{display:{Name:'{"text":"Zurück","color":"dark_gray","italic":false}',Lore:['{"text":"Zum Profilmenü","color":"white","italic":false}']}} 1
+execute if score @s profilmenu matches 2 run item replace entity @e[type=chest_minecart,distance=..3] container.12 with iron_sword
+execute if score @s profilmenu matches 2 run item replace entity @e[type=chest_minecart,distance=..3] container.13 with skeleton_skull
 execute if score @s profilmenu matches 2 run item modify entity @e[type=chest_minecart,distance=..3] container.14 server:coins
 execute if score @s profilmenu matches 2 run item modify entity @e[type=chest_minecart,distance=..3] container.15 server:playtime
+execute if score @s profilmenu matches 2 run item modify entity @e[type=chest_minecart,distance=..3] container.12 server:kills
+execute if score @s profilmenu matches 2 run item modify entity @e[type=chest_minecart,distance=..3] container.13 server:deaths
 execute if score @s profilmenu matches 2 run function server:warpmenu/glass_set
 execute if score @s profilmenu matches 2 run scoreboard players set @s profilmenu 3
 execute if score @s profilmenu matches 3 run function server:profilmenu/stats
