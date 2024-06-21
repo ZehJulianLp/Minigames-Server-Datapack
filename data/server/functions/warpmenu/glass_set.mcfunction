@@ -21,7 +21,7 @@ execute if score @s glass_color matches 16 run data modify storage minecraft:tmp
 # Initialize @s with falsy value
 scoreboard players set @s Slot -1
 
-# Repeat everything below for 0-26
+# Repeat everything below for 0-26 
 # Get @s
 execute unless entity @e[type=minecraft:chest_minecart,distance=..3,limit=1,nbt={Items:[{Slot:0b}]}] run scoreboard players set @s Slot 0
 execute if score @s Slot matches 0 run data modify storage minecraft:tmp Fill.Slot set value 0b

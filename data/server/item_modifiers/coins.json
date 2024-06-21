@@ -1,0 +1,47 @@
+[
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "name": {
+        "text": "Deine Coins:",
+        "color": "gold",
+        "bold": true,
+        "italic": false
+      }
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        {
+          "score": {
+            "name": "@p[distance=..3]",
+            "objective": "coin-value"
+          },
+          "color": "yellow",
+          "font": "minecraft:default",
+          "bold": false,
+          "italic": false,
+          "extra": [
+            {
+              "text": " Stück",
+              "color": "dark_green",
+              "font": "minecraft:default",
+              "bold": true,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "(Klicke zum Updaten.)",
+          "color": "yellow",
+          "font": "minecraft:default",
+          "italic": false
+        }
+      ]
+    }
+  ]
+  

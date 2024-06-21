@@ -37,4 +37,5 @@ scoreboard objectives add party-kick trigger
 scoreboard objectives add party-promote trigger
 scoreboard objectives add party-demote trigger
 scoreboard objectives add party-warp trigger
+scoreboard objectives add profilmenu dummy
 tellraw @a[tag=admin] "Reloaded Datapack."

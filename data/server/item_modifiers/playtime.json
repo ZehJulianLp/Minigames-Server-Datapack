@@ -1,0 +1,91 @@
+[
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "name": {
+        "text": "Deine Spielzeit:",
+        "color": "gold",
+        "bold": true,
+        "italic": false
+      }
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        {
+          "score": {
+            "name": "@p[distance=..3]",
+            "objective": "playtime-days"
+          },
+          "color": "gold",
+          "font": "minecraft:default",
+          "bold": true,
+          "italic": false,
+          "extra": [
+            {
+              "text": "d ",
+              "color": "green",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "score": {
+                "name": "@p[distance=..3]",
+                "objective": "playtime-hours"
+              },
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": "h ",
+              "color": "green",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "score": {
+                "name": "@p[distance=..3]",
+                "objective": "playtime-minutes"
+              },
+              "color": "gold",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": "m ",
+              "color": "green",
+              "bold": false,
+              "italic": false
+            },
+            {
+              "score": {
+                "name": "@p[distance=..3]",
+                "objective": "playtime-seconds"
+              },
+              "color": "gold",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": "s",
+              "color": "green",
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "(Klicke zum Updaten.)",
+          "color": "yellow",
+          "font": "minecraft:default",
+          "bold": false,
+          "italic": false
+        }
+      ]
+    }
+  ]
+  
