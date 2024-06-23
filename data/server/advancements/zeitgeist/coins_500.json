@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:gold_ingot"
+      },
+      "title": {
+        "text": "Der Goldesel kommt!",
+        "color": "gold",
+        "bold": true
+      },
+      "description": {
+        "text": "Habe 500 Coins auf deinem Konto!"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "hidden": false
+    },
+    "parent": "server:zeitgeist/coins_50",
+    "criteria": {
+      "": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

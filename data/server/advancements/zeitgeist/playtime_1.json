@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:bell"
+      },
+      "title": {
+        "text": "Schon 1 Stunde rum?",
+        "color": "gold",
+        "bold": true
+      },
+      "description": {
+        "text": "Spiele 1 Stunde auf dem Server!"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "hidden": false
+    },
+    "parent": "server:zeitgeist/root",
+    "criteria": {
+      "": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

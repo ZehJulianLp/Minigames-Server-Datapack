@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:iron_ingot"
+      },
+      "title": {
+        "text": "Win der Woche!",
+        "color": "gold",
+        "bold": true
+      },
+      "description": {
+        "text": "Gewinne 100 Spiele."
+      },
+      "frame": "task",
+      "show_toast": true,
+      "hidden": false
+    },
+    "parent": "server:minigames/win_1",
+    "criteria": {
+      "": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

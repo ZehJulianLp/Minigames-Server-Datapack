@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:leather"
+      },
+      "title": {
+        "text": "Der Weg zum Sieg!",
+        "color": "gold",
+        "bold": true
+      },
+      "description": {
+        "text": "Gewinne dein erstes Spiel!"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "hidden": false
+    },
+    "parent": "server:minigames/root",
+    "criteria": {
+      "": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

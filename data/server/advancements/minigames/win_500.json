@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:netherite_ingot"
+      },
+      "title": {
+        "text": "Ich bin so Pro Player!",
+        "color": "gold",
+        "bold": true
+      },
+      "description": {
+        "text": "Gewinne 500 Spiele."
+      },
+      "frame": "challenge",
+      "show_toast": true,
+      "hidden": false
+    },
+    "parent": "server:minigames/win_100",
+    "criteria": {
+      "": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

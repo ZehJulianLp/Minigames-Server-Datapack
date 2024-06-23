@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:diamond_block"
+      },
+      "title": {
+        "text": "Rich Kid!",
+        "color": "gold",
+        "bold": true
+      },
+      "description": {
+        "text": "Habe 10000 Coins auf deinem Konto!"
+      },
+      "frame": "challenge",
+      "show_toast": true,
+      "hidden": false
+    },
+    "parent": "server:zeitgeist/coins_5000",
+    "criteria": {
+      "": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

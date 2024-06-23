@@ -43,4 +43,5 @@ scoreboard objectives add profilmenu dummy
 scoreboard objectives add stats trigger
 scoreboard objectives add jump_and_run dummy
 scoreboard objectives add kick dummy
+scoreboard objectives add win dummy
 tellraw @a[tag=admin] "Reloaded Datapack."

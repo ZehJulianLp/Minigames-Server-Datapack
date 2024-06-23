@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:diamond"
+      },
+      "title": {
+        "text": "But wait, there's more!",
+        "color": "gold",
+        "bold": true
+      },
+      "description": {
+        "text": "Gewinne 100 Spiele."
+      },
+      "frame": "goal",
+      "show_toast": true,
+      "hidden": false
+    },
+    "parent": "server:minigames/win_10",
+    "criteria": {
+      "": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

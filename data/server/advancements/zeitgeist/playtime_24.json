@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:beacon"
+      },
+      "title": {
+        "text": "Tage wie diese...",
+        "color": "gold",
+        "bold": true
+      },
+      "description": {
+        "text": "Spiele 1 Tag auf dem Server!"
+      },
+      "frame": "goal",
+      "show_toast": true,
+      "hidden": false
+    },
+    "parent": "server:zeitgeist/playtime_10",
+    "criteria": {
+      "": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

@@ -1,0 +1,27 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:clock"
+      },
+      "title": {
+        "text": "Zeitgeist",
+        "color": "red",
+        "bold": true,
+        "italic": false
+      },
+      "description": {
+        "text": "Advancements für Coins/Playtime",
+        "color": "green",
+        "italic": false
+      },
+      "background": "minecraft:textures/block/raw_copper_block.png",
+      "show_toast": false,
+      "hidden": false
+    },
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

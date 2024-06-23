@@ -56,6 +56,13 @@ execute as @a[scores={report-prog=2}] run scoreboard players reset @s report-pro
 
 advancement grant @a only server:lobby/root
 advancement grant @a only server:minigames/root
+advancement grant @a only server:zeitgeist/root
+
+advancement revoke @a only minecraft:story/root
+advancement revoke @a only minecraft:adventure/root
+advancement revoke @a only minecraft:nether/root
+advancement revoke @a only minecraft:end/root
+advancement revoke @a only minecraft:husbandry/root
 
 execute as @a[scores={jump_and_run=1..}] run advancement grant @s only server:lobby/jump_and_run
 
@@ -70,3 +77,17 @@ execute as @a[scores={deathCount=1..}] run advancement grant @s only server:mini
 execute as @a[scores={deathCount=10..}] run advancement grant @s only server:minigames/death_10
 execute as @a[scores={deathCount=100..}] run advancement grant @s only server:minigames/death_100
 execute as @a[scores={deathCount=500..}] run advancement grant @s only server:minigames/death_500
+
+execute as @a[scores={win=1..}] run advancement grant @s only server:minigames/win_1
+execute as @a[scores={win=10..}] run advancement grant @s only server:minigames/win_10
+execute as @a[scores={win=100..}] run advancement grant @s only server:minigames/win_100
+execute as @a[scores={win=500..}] run advancement grant @s only server:minigames/win_500
+
+execute as @a[scores={coin-value=50..}] run advancement grant @s only server:zeitgeist/coins_50
+execute as @a[scores={coin-value=500..}] run advancement grant @s only server:zeitgeist/coins_500
+execute as @a[scores={coin-value=5000..}] run advancement grant @s only server:zeitgeist/coins_5000
+execute as @a[scores={coin-value=10000..}] run advancement grant @s only server:zeitgeist/coins_10000
+
+execute as @a[scores={playtime-hours=1..}] run advancement grant @s only server:zeitgeist/playtime_1
+execute as @a[scores={playtime-hours=10..}] run advancement grant @s only server:zeitgeist/playtime_10
+execute as @a[scores={playtime-days=1..}] run advancement grant @s only server:zeitgeist/playtime_24
