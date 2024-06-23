@@ -64,30 +64,30 @@ advancement revoke @a only minecraft:nether/root
 advancement revoke @a only minecraft:end/root
 advancement revoke @a only minecraft:husbandry/root
 
-execute as @a[scores={jump_and_run=1..}] run advancement grant @s only server:lobby/jump_and_run
+execute as @r[scores={jump_and_run=1..}] run advancement grant @s only server:lobby/jump_and_run
 
-execute as @a[scores={kick=1..}] run advancement grant @s only server:lobby/button
+execute as @r[scores={kick=1..}] run advancement grant @s only server:lobby/button
 
-execute as @a[scores={killCount=1..}] run advancement grant @s only server:minigames/kill_player_1
-execute as @a[scores={killCount=10..}] run advancement grant @s only server:minigames/kill_player_10
-execute as @a[scores={killCount=100..}] run advancement grant @s only server:minigames/kill_player_100
-execute as @a[scores={killCount=500..}] run advancement grant @s only server:minigames/kill_player_500
+execute as @r[scores={killCount=1..}] run advancement grant @s only server:minigames/kill_player_1
+execute as @r[scores={killCount=10..}] run advancement grant @s only server:minigames/kill_player_10
+execute as @r[scores={killCount=100..}] run advancement grant @s only server:minigames/kill_player_100
+execute as @r[scores={killCount=500..}] run advancement grant @s only server:minigames/kill_player_500
 
-execute as @a[scores={deathCount=1..}] run advancement grant @s only server:minigames/death_1
-execute as @a[scores={deathCount=10..}] run advancement grant @s only server:minigames/death_10
-execute as @a[scores={deathCount=100..}] run advancement grant @s only server:minigames/death_100
-execute as @a[scores={deathCount=500..}] run advancement grant @s only server:minigames/death_500
+execute as @r[scores={deathCount=1..}] run advancement grant @s only server:minigames/death_1
+execute as @r[scores={deathCount=10..}] run advancement grant @s only server:minigames/death_10
+execute as @r[scores={deathCount=100..}] run advancement grant @s only server:minigames/death_100
+execute as @r[scores={deathCount=500..}] run advancement grant @s only server:minigames/death_500
 
-execute as @a[scores={win=1..}] run advancement grant @s only server:minigames/win_1
-execute as @a[scores={win=10..}] run advancement grant @s only server:minigames/win_10
-execute as @a[scores={win=100..}] run advancement grant @s only server:minigames/win_100
-execute as @a[scores={win=500..}] run advancement grant @s only server:minigames/win_500
+execute as @r[scores={win=1..}] run advancement grant @s only server:minigames/win_1
+execute as @r[scores={win=10..}] run advancement grant @s only server:minigames/win_10
+execute as @r[scores={win=100..}] run advancement grant @s only server:minigames/win_100
+execute as @r[scores={win=500..}] run advancement grant @s only server:minigames/win_500
 
-execute as @a[scores={coin-value=50..}] run advancement grant @s only server:zeitgeist/coins_50
-execute as @a[scores={coin-value=500..}] run advancement grant @s only server:zeitgeist/coins_500
-execute as @a[scores={coin-value=5000..}] run advancement grant @s only server:zeitgeist/coins_5000
-execute as @a[scores={coin-value=10000..}] run advancement grant @s only server:zeitgeist/coins_10000
+execute as @r[scores={coin-value=50..}] run advancement grant @s only server:zeitgeist/coins_50
+execute as @r[scores={coin-value=500..}] run advancement grant @s only server:zeitgeist/coins_500
+execute as @r[scores={coin-value=5000..}] run advancement grant @s only server:zeitgeist/coins_5000
+execute as @r[scores={coin-value=10000..}] run advancement grant @s only server:zeitgeist/coins_10000
 
-execute as @a[scores={playtime-hours=1..}] run advancement grant @s only server:zeitgeist/playtime_1
-execute as @a[scores={playtime-hours=10..}] run advancement grant @s only server:zeitgeist/playtime_10
-execute as @a[scores={playtime-days=1..}] run advancement grant @s only server:zeitgeist/playtime_24
+execute as @r[scores={playtime-hours=1..}] run advancement grant @s only server:zeitgeist/playtime_1
+execute as @r[scores={playtime-hours=10..}] run advancement grant @s only server:zeitgeist/playtime_10
+execute as @r[scores={playtime-days=1..}] run advancement grant @s only server:zeitgeist/playtime_24
