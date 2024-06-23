@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:zombie_head"
+      },
+      "title": {
+        "text": "U died...",
+        "color": "gold",
+        "bold": true
+      },
+      "description": {
+        "text": "Sterbe das erste Mal."
+      },
+      "frame": "task",
+      "show_toast": true,
+      "hidden": false
+    },
+    "parent": "server:minigames/root",
+    "criteria": {
+      "": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

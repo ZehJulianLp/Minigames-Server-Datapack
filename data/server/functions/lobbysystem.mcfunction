@@ -118,9 +118,13 @@ execute as @a[scores={leave=1..}] run title @s times 20 60 20
 execute as @a[scores={leave=1..}] run title @s subtitle {"selector":"@s","underlined":true,"color":"gold"}
 execute as @a[scores={leave=1..}] run title @s title [{"text":"Willkommen zurück,","color":"dark_green","bold":true}]
 execute as @a[scores={leave=1..}] run tellraw @s ["",{"text":"Willkommen zurück,","color":"dark_green","bold":true},{"text":" ","color":"dark_green","bold":true},{"selector":"@s","color":"gold","bold":true},{"text":"!","color":"dark_green","bold":true}]
+execute as @a[scores={leave=1..}] run advancement grant @s only server:lobby/root
+execute as @a[scores={leave=1..}] run advancement grant @s only server:minigames/root
 execute as @a[scores={leave=1..}] run scoreboard players reset @s warpmenu
 execute as @a[scores={leave=1..}] run scoreboard players reset @s profilmenu
 execute as @a[scores={leave=1..}] run scoreboard players reset @s leave
+
+
 
 ##
 
@@ -191,4 +195,5 @@ execute positioned 6 56 -2 if block ~ ~ ~ acacia_pressure_plate[powered=true] ru
 execute positioned 6 56 -2 if block ~ ~ ~ acacia_pressure_plate[powered=true] run tellraw @p[distance=..3] ["",{"text":"[Server] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Du hast ","color":"dark_green"},{"text":"das Jump and Run ","bold":true,"color":"gold"},{"text":" ","color":"green"},{"text":"geschafft!","color":"dark_green"}]
 execute positioned 6 56 -2 if block ~ ~ ~ acacia_pressure_plate[powered=true] run tellraw @p[distance=..3] ["",{"text":"[CoinSystem] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Du hast ","color":"dark_green"},{"text":"20 ","bold":true,"color":"gold"},{"text":"Coins ","color":"green"},{"text":"erhalten.","color":"dark_green"}]
 execute positioned 6 56 -2 if block ~ ~ ~ acacia_pressure_plate[powered=true] run playsound entity.arrow.hit_player master @p[distance=..3] ~ ~ ~ 100 2 1
+execute positioned 6 56 -2 if block ~ ~ ~ acacia_pressure_plate[powered=true] run scoreboard players add @p[distance=..3] jump_and_run 1
 execute positioned 6 56 -2 if block ~ ~ ~ acacia_pressure_plate[powered=true] as @p[distance=..3] run trigger hub

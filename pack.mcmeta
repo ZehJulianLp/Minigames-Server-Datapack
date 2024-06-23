@@ -1,1 +1,14 @@
-{"pack": {"pack_format": 12, "description": "Julians Minigames Datapack"}}
+{
+    "pack": {
+        "pack_format": 12,
+        "description": "Julians Minigames Datapack"
+    },
+    "filter": {
+        "block": [
+            {
+                "namespace": "minecraft",
+                "path": "advancements/.*"
+            }
+        ]
+    }
+}

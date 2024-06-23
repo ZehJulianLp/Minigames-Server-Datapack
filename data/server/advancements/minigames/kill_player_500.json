@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:netherite_sword"
+    },
+    "title": {
+      "text": "HAX MODE? Oder doch nicht?",
+      "color": "gold",
+      "bold": true
+    },
+    "description": {
+      "text": "Kille 500 Spieler."
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "hidden": false
+  },
+  "parent": "server:minigames/kill_player_100",
+  "criteria": {
+    "": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

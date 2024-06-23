@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:skeleton_skull"
+      },
+      "title": {
+        "text": "Legends never die!",
+        "color": "gold",
+        "bold": true
+      },
+      "description": {
+        "text": "Sterbe 10 Mal."
+      },
+      "frame": "task",
+      "show_toast": true,
+      "hidden": false
+    },
+    "parent": "server:minigames/death_1",
+    "criteria": {
+      "": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

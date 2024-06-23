@@ -50,3 +50,23 @@ execute as @a[nbt={Inventory:[{id:"minecraft:written_book"}]},scores={report-pro
 execute as @a[scores={report-prog=2}] run clear @s written_book
 execute as @a[scores={report-prog=2}] run tellraw @a[tag=admin] ["",{"text":"[Report] ","bold":true,"italic":true,"color":"dark_blue"},{"selector":"@s","color":"gold"},{"text":" hat einen Report abgegeben!","color":"dark_purple"}]
 execute as @a[scores={report-prog=2}] run scoreboard players reset @s report-prog
+
+
+#advancement system
+
+advancement grant @a only server:lobby/root
+advancement grant @a only server:minigames/root
+
+execute as @a[scores={jump_and_run=1..}] run advancement grant @s only server:lobby/jump_and_run
+
+execute as @a[scores={kick=1..}] run advancement grant @s only server:lobby/button
+
+execute as @a[scores={killCount=1..}] run advancement grant @s only server:minigames/kill_player_1
+execute as @a[scores={killCount=10..}] run advancement grant @s only server:minigames/kill_player_10
+execute as @a[scores={killCount=100..}] run advancement grant @s only server:minigames/kill_player_100
+execute as @a[scores={killCount=500..}] run advancement grant @s only server:minigames/kill_player_500
+
+execute as @a[scores={deathCount=1..}] run advancement grant @s only server:minigames/death_1
+execute as @a[scores={deathCount=10..}] run advancement grant @s only server:minigames/death_10
+execute as @a[scores={deathCount=100..}] run advancement grant @s only server:minigames/death_100
+execute as @a[scores={deathCount=500..}] run advancement grant @s only server:minigames/death_500

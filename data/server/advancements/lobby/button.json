@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:black_concrete"
+      },
+      "title": {
+        "text": "Beende es.",
+        "color": "gold",
+        "bold": true
+      },
+      "description": {
+        "text": "Er wartet auf dich..."
+      },
+      "frame": "goal",
+      "show_toast": true,
+      "hidden": false
+    },
+    "parent": "server:lobby/root",
+    "criteria": {
+      "": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

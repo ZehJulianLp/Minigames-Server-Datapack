@@ -1,0 +1,24 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:slime_block"
+      },
+      "title": {
+        "text": "Pro Jumper",
+        "color": "gold",
+        "bold": true
+      },
+      "description": {
+        "text": "Schaffe das Jump and Run"
+      },
+      "show_toast": true,
+      "hidden": false
+    },
+    "parent": "server:lobby/root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

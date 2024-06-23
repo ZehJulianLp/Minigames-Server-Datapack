@@ -6,15 +6,15 @@ execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:18b,
 execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:18b,id:"minecraft:arrow"}]}] run scoreboard players set @s profilmenu 0
 execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:18b,id:"minecraft:arrow"}]}] run clear @s arrow
 
-execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:14b,id:"minecraft:gold_nugget"}]}] run playsound minecraft:block.amethyst_block.place master @s ~ ~ ~ 1 1 1
-execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:14b,id:"minecraft:gold_nugget"}]}] run tellraw @s ["",{"text":"[Server] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Seite aktualisiert!","color":"gold"}]
-execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:14b,id:"minecraft:gold_nugget"}]}] run scoreboard players set @s profilmenu 2
-execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:14b,id:"minecraft:gold_nugget"}]}] run clear @s gold_nugget
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:15b,id:"minecraft:gold_nugget"}]}] run playsound minecraft:block.amethyst_block.place master @s ~ ~ ~ 1 1 1
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:15b,id:"minecraft:gold_nugget"}]}] run tellraw @s ["",{"text":"[Server] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Seite aktualisiert!","color":"gold"}]
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:15b,id:"minecraft:gold_nugget"}]}] run scoreboard players set @s profilmenu 2
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:15b,id:"minecraft:gold_nugget"}]}] run clear @s gold_nugget
 
-execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:15b,id:"minecraft:clock"}]}] run playsound minecraft:block.amethyst_block.place master @s ~ ~ ~ 1 1 1
-execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:15b,id:"minecraft:clock"}]}] run tellraw @s ["",{"text":"[Server] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Seite aktualisiert!","color":"gold"}]
-execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:15b,id:"minecraft:clock"}]}] run scoreboard players set @s profilmenu 2
-execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:15b,id:"minecraft:clock"}]}] run clear @s clock
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:16b,id:"minecraft:clock"}]}] run playsound minecraft:block.amethyst_block.place master @s ~ ~ ~ 1 1 1
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:16b,id:"minecraft:clock"}]}] run tellraw @s ["",{"text":"[Server] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Seite aktualisiert!","color":"gold"}]
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:16b,id:"minecraft:clock"}]}] run scoreboard players set @s profilmenu 2
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:16b,id:"minecraft:clock"}]}] run clear @s clock
 
 execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:12b,id:"minecraft:iron_sword"}]}] run playsound minecraft:block.amethyst_block.place master @s ~ ~ ~ 1 1 1
 execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:12b,id:"minecraft:iron_sword"}]}] run tellraw @s ["",{"text":"[Server] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Seite aktualisiert!","color":"gold"}]
@@ -25,6 +25,11 @@ execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:13b,
 execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:13b,id:"minecraft:skeleton_skull"}]}] run tellraw @s ["",{"text":"[Server] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Seite aktualisiert!","color":"gold"}]
 execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:13b,id:"minecraft:skeleton_skull"}]}] run scoreboard players set @s profilmenu 2
 execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:13b,id:"minecraft:skeleton_skull"}]}] run clear @s skeleton_skull
+
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:14b,id:"minecraft:slime_block"}]}] run playsound minecraft:block.amethyst_block.place master @s ~ ~ ~ 1 1 1
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:14b,id:"minecraft:slime_block"}]}] run tellraw @s ["",{"text":"[Server] ","bold":true,"italic":true,"color":"dark_blue"},{"text":"Seite aktualisiert!","color":"gold"}]
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:14b,id:"minecraft:slime_block"}]}] run scoreboard players set @s profilmenu 2
+execute unless entity @e[type=chest_minecart,distance=..3,nbt={Items:[{Slot:14b,id:"minecraft:slime_block"}]}] run clear @s slime_block
 
 execute as @s[team=Admin] run item replace entity @e[type=chest_minecart,distance=..3] container.11 with redstone_block{display:{Name:'{"text":"Dein Rang:","color":"gold","bold":true, "italic": false}',Lore:['{"text":"Admin","color":"red","italic": false}']}}
 execute as @s[team=BPremium] run item replace entity @e[type=chest_minecart,distance=..3] container.11 with diamond{display:{Name:'{"text":"Dein Rang:","color":"gold","bold":true, "italic": false}',Lore:['{"text":"Premium","color":"aqua","italic": false}']}}

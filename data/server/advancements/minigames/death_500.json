@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:creeper_head"
+      },
+      "title": {
+        "text": "Zu gut für dieses Spiel!",
+        "color": "gold",
+        "bold": true
+      },
+      "description": {
+        "text": "Sterbe 500 Mal."
+      },
+      "frame": "challenge",
+      "show_toast": true,
+      "hidden": false
+    },
+    "parent": "server:minigames/death_100",
+    "criteria": {
+      "": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

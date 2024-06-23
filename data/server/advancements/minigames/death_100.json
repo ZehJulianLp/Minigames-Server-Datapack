@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:wither_skeleton_skull"
+      },
+      "title": {
+        "text": "There is no time to die!",
+        "color": "gold",
+        "bold": true
+      },
+      "description": {
+        "text": "Sterbe 100 Mal."
+      },
+      "frame": "goal",
+      "show_toast": true,
+      "hidden": false
+    },
+    "parent": "server:minigames/death_10",
+    "criteria": {
+      "": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:wooden_sword"
+      },
+      "title": {
+        "text": "Enemy Spotted!",
+        "color": "gold",
+        "bold": true
+      },
+      "description": {
+        "text": "Kille deinen ersten Gegner."
+      },
+      "frame": "task",
+      "show_toast": true,
+      "hidden": false
+    },
+    "parent": "server:minigames/root",
+    "criteria": {
+      "": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

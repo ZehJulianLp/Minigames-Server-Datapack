@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:diamond_sword"
+    },
+    "title": {
+      "text": "Goldener Krieger",
+      "color": "gold",
+      "bold": true
+    },
+    "description": {
+      "text": "Kille 100 Spieler."
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "hidden": false
+  },
+  "parent": "server:minigames/kill_player_10",
+  "criteria": {
+    "": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

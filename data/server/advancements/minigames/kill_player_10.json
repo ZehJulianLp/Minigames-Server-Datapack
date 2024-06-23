@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:iron_sword"
+      },
+      "title": {
+        "text": "10 Fliegen mit einer Klappe!",
+        "color": "gold",
+        "bold": true
+      },
+      "description": {
+        "text": "Kille 10 Spieler."
+      },
+      "frame": "task",
+      "show_toast": true,
+      "hidden": false
+    },
+    "parent": "server:minigames/kill_player_1",
+    "criteria": {
+      "": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  
